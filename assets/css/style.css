@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(126, 60, 60);
+}
+
+#container {
+  width: 40%;
+  margin-top:40px;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+  font-family: tahoma, sans-serif;
+  padding-bottom: 40px;
+}
+
+.style-block {
+  display: block;
+}
+
+.style-mb {
+  margin-bottom: 20px;
+  line-height: 30px;
+}
