@@ -7,17 +7,29 @@ body {
   margin-top:40px;
   margin-left:auto;
   margin-right:auto;
+  margin-bottom: 40px;
   border-radius: 20px;
   background-color: white;
   text-align: center;
   font-family: tahoma, sans-serif;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
+  line-height: 30px;
 }
 
 .style-mb {
   margin-bottom: 20px;
 }
 
-.style-lh {
-  line-height: 30px;
+textarea {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  resize: none;
+}
+
+#submit {
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 100px;
 }

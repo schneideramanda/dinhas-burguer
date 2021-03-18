@@ -19,23 +19,23 @@
       <h1>Monte o seu hambúrguer!</h1>
 
       <!-- Choice of Protein -->
-      <div id="meat" class="style-mb" class="style-lh">
+      <div id="meat" class="style-mb">
         <label for="meat">Você gostaria de qual proteína?</label>
         <div>
-          <input type="text" name="meat" id="meat">
+          <input type="text" name="meat" id="meat" required>
         </div>
       </div>
 
       <!-- Number of Patties -->
-      <div id="patty" class="style-mb" class="style-lh">
+      <div id="patty" class="style-mb">
         <label for="patty">Quantos hambúrgueres você quer?</label>
         <div>
-          <input type="number" step="1" min="0" max="5" name="patty" id="patty">
+          <input type="number" step="1" min="1" max="5" name="patty" id="patty" value="1">
         </div>
       </div>
       
       <!-- Doneness of the meat -->
-      <div id="doneness" class="style-mb" class="style-lh">
+      <div id="doneness" class="style-mb">
         <label for="doneness">O quão passada você quer a sua carne?</label>
         <div>
           <span>Mal Passada</span>
@@ -45,7 +45,7 @@
       </div>
       
       <!-- Cheese in the Burguer -->
-      <div id="cheese" class="style-mb" class="style-lh">
+      <div id="cheese" class="style-mb">
         <label for="cheese">Você gostaria de adicionar queijo?</label>
         <div> 
           <input type="radio" id="yes" name="answer" value="yes">     
@@ -56,7 +56,7 @@
       </div>
     
       <!-- Choice of Toppings -->
-      <div id="toppings" class="style-mb" class="style-lh">
+      <div id="toppings" class="style-mb">
         <label for="toppings">Quais complementos você gostaria?</label>
         <div>
           <input type="checkbox" name="toppings" id="lettuce" value="lettuce">
@@ -73,7 +73,7 @@
       </div>
 
       <!-- Choice of Bun -->
-      <div id="bun" class="style-mb" class="style-lh">
+      <div id="bun" class="style-mb">
         <label for="bun">Que tipo de pão você gostaria?</label>
         <div>
           <select id="bun" name="bun">
@@ -84,9 +84,28 @@
         </div>
       </div>
 
-      <!-- Submit -->
+      <!-- Choice of Sauce -->
+      <div id="sauce" class="style-mb">
+        <label for="sauce">Qual molho você quer?</label>
+        <div>
+          <select id="sauce" name="sauce">
+            <option value="mayo">Maionese</option>
+            <option value="ketchup">Ketchup</option>
+            <option value="mostard">Mostarda</option>
+            <option value="none">Nenhum</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Client Observation -->
+      <div id="observation" class="style-mb">
+        <label for="observation">Alguma observação?</label>
+        <textarea id="observation" name="observation" rows="5" cols="40"></textarea>
+      </div>
+
+      <!-- Submit Button -->
       <div id="submit">
-        <input type="submit" name="submit" value="Finish">
+        <input type="submit" id="submit" name="submit" value="Finish">
       </div>
 
     </div>
