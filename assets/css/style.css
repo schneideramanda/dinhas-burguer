@@ -16,5 +16,8 @@ body {
 
 .style-mb {
   margin-bottom: 20px;
+}
+
+.style-lh {
   line-height: 30px;
 }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinha's Burguer</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <form>
+    <div id="container">
+
+      <!-- Image of the Logotype -->
+      <img src="assets/images/dinhas-burguer.png" alt="Dinha's Burguer Logo" id="logo" width="45%" height="45%">
+      <hr>
+
+      <!-- Title -->
+      <h1>Monte o seu hambúrguer!</h1>
+
+      <!-- Choice of Protein -->
+      <div id="meat" class="style-mb" class="style-lh">
+        <label for="meat">Você gostaria de qual proteína?</label>
+        <div>
+          <input type="text" name="meat" id="meat">
+        </div>
+      </div>
+
+      <!-- Number of Patties -->
+      <div id="patty" class="style-mb" class="style-lh">
+        <label for="patty">Quantos hambúrgueres você quer?</label>
+        <div>
+          <input type="number" step="1" min="0" max="5" name="patty" id="patty">
+        </div>
+      </div>
+      
+      <!-- Doneness of the meat -->
+      <div id="doneness" class="style-mb" class="style-lh">
+        <label for="doneness">O quão passada você quer a sua carne?</label>
+        <div>
+          <span>Mal Passada</span>
+          <input type="range" min="0" max="100" step="1" name="doneness" id="doneness">
+          <span>Bem Passada</span>
+        </div>
+      </div>
+      
+      <!-- Cheese in the Burguer -->
+      <div id="cheese" class="style-mb" class="style-lh">
+        <label for="cheese">Você gostaria de adicionar queijo?</label>
+        <div> 
+          <input type="radio" id="yes" name="answer" value="yes">     
+          <label for="yes">Sim</label>
+          <input type="radio" id="no" name="answer" value="no">
+          <label for="no">Não</label>
+        </div>
+      </div>
+    
+      <!-- Choice of Toppings -->
+      <div id="toppings" class="style-mb" class="style-lh">
+        <label for="toppings">Quais complementos você gostaria?</label>
+        <div>
+          <input type="checkbox" name="toppings" id="lettuce" value="lettuce">
+          <label for="lettuce">Alface</label>
+          <input type="checkbox" name="toppings" id="tomato" value="tomato">
+          <label for="tomato">Tomate</label>
+          <input type="checkbox" name="toppings" id="onion" value="onion">
+          <label for="onion">Cebola</label>
+          <input type="checkbox" name="toppings" id="picles" value="picles">
+          <label for="picles">Picles</label>
+          <input type="checkbox" name="toppings" id="bacon" value="bacon">
+          <label for="bacon">Bacon</label>
+        </div>
+      </div>
+
+      <!-- Choice of Bun -->
+      <div id="bun" class="style-mb" class="style-lh">
+        <label for="bun">Que tipo de pão você gostaria?</label>
+        <div>
+          <select id="bun" name="bun">
+            <option value="brioche">Brioche</option>
+            <option value="potato">Americano</option>
+            <option value="sesame">Com Gergelim</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <div id="submit">
+        <input type="submit" name="submit" value="Finish">
+      </div>
+
+    </div>
+  </form>
+</body>
+</html>
