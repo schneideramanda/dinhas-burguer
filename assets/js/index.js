@@ -30,9 +30,8 @@ function renderOrderSummary(formData) {
   const contentEl = document.getElementById('content');
   removeAllHtmlContent(contentEl);
 
-  const heading = document.createElement('h2');
+  const heading = document.querySelector('heading h1');
   heading.innerText = 'Resumo do Pedido';
-  contentEl.appendChild(heading);
 
   const responses = [];
   formInputsKeys

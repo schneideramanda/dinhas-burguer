@@ -12,9 +12,9 @@
     <script src="assets/js/utils.js"></script>
   </head>
   <body>
-    <form>
-      <div id="container">
-        <!-- Image of the Logotype -->
+    <div id="container">
+      <!-- Image of the Logotype -->
+      <figure>
         <img
           src="assets/images/dinhas-burguer.png"
           alt="Dinha's Burguer Logo"
@@ -22,17 +22,21 @@
           width="45%"
           height="45%"
         />
-        <hr />
+      </figure>
+      <hr />
 
-        <div id="content">
-          <!-- Title -->
-          <h1>Monte o seu hambúrguer!</h1>
+      <!-- Title -->
+      <heading>
+        <h1>Monte o seu hambúrguer!</h1>
+      </heading>
 
+      <main id="content">
+        <form>
           <!-- Choice of Protein -->
           <div id="meat" class="style-mb">
             <label for="meat">Você gostaria de qual proteína?</label>
             <div>
-              <input type="text" name="meat" id="meat" required />
+              <input type="text" name="meat" required />
             </div>
           </div>
 
@@ -46,7 +50,6 @@
                 min="1"
                 max="5"
                 name="patty"
-                id="patty"
                 value="1"
               />
             </div>
@@ -57,14 +60,7 @@
             <label for="doneness">O quão passada você quer a sua carne?</label>
             <div>
               <span>Mal Passada</span>
-              <input
-                type="range"
-                min="0"
-                max="100"
-                step="1"
-                name="doneness"
-                id="doneness"
-              />
+              <input type="range" min="0" max="100" step="1" name="doneness" />
               <span>Bem Passada</span>
             </div>
           </div>
@@ -73,7 +69,7 @@
           <div id="cheese" class="style-mb">
             <label for="cheese">Você gostaria de adicionar queijo?</label>
             <div>
-              <input type="radio" id="yes" name="answer" value="yes" />
+              <input type="radio" id="yes" name="answer" value="yes" required />
               <label for="yes">Sim</label>
               <input type="radio" id="no" name="answer" value="no" />
               <label for="no">Não</label>
@@ -116,7 +112,7 @@
           <div id="bun" class="style-mb">
             <label for="bun">Que tipo de pão você gostaria?</label>
             <div>
-              <select id="bun" name="bun">
+              <select name="bun">
                 <option value="brioche">Brioche</option>
                 <option value="potato">Americano</option>
                 <option value="sesame">Com Gergelim</option>
@@ -128,7 +124,7 @@
           <div id="sauce" class="style-mb">
             <label for="sauce">Qual molho você quer?</label>
             <div>
-              <select id="sauce" name="sauce">
+              <select name="sauce">
                 <option value="mayo">Maionese</option>
                 <option value="ketchup">Ketchup</option>
                 <option value="mostard">Mostarda</option>
@@ -140,20 +136,15 @@
           <!-- Client Observation -->
           <div id="observation" class="style-mb">
             <label for="observation">Alguma observação?</label>
-            <textarea
-              id="observation"
-              name="observation"
-              rows="5"
-              cols="40"
-            ></textarea>
+            <textarea name="observation" rows="5" cols="40"></textarea>
           </div>
 
           <!-- Submit Button -->
           <div id="submit">
-            <input type="submit" id="submit" name="submit" value="Finish" />
+            <input type="submit" name="submit" value="Finish" />
           </div>
-        </div>
-      </div>
-    </form>
+        </form>
+      </main>
+    </div>
   </body>
 </html>
